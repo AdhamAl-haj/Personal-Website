@@ -11,7 +11,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Sakkal Majalla', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Beiruti', Tahoma, Geneva, Verdana, sans-serif;
 }
 a{
     text-decoration: none;
@@ -88,6 +88,7 @@ body
     padding: 10px 20px;
     font-size: 26px;
     color: var(--BackgroundColor);
+    font-weight: 200;
 }
 .links-con .list-links .Section-Style a:hover
 {
