@@ -1,0 +1,94 @@
+:root
+{
+    --TitleColor: #0077C0;
+    --LinkColor: #1D242B;
+    --BackgroundColor: #FAFAFA;
+    --LighttitleColor:#C7EEFF;
+}
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Sakkal Majalla', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--LinkColor);
+}
+
+body
+{
+    background-color: var(--BackgroundColor);
+}
+.container
+{
+    margin: 0 auto;
+    padding: 0px 15px ;
+}
+
+
+/* -- -- Header Style -- -- */
+.header-con
+{
+    position: relative;
+    background-color: var(--TitleColor);
+    padding: 15px 0px;
+    /* border-bottom: 1px solid #1D242B; */
+    box-shadow: 0px 7px 15px 5px rgb(29 36 43 / 10%);
+}
+
+.logo-con{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.logo-con .logo{
+    max-width: 200px;
+    padding: 15px 0px;
+}
+
+
+.links-con
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 10px;
+}
+.links-con .list-links
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.links-con .list-links .Section-Style
+{
+    position: relative;
+}
+.links-con .list-links .Section-Style:not(:first-child)::after
+{
+    position: absolute;
+    content: ""; 
+    background-color:var(--LighttitleColor);
+    width: 1px;
+    height: 50%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+.links-con .list-links .Section-Style a
+{
+    display: block;
+    padding: 10px 20px;
+    font-size: 26px;
+    color: var(--BackgroundColor);
+}
+.links-con .list-links .Section-Style a:hover
+{
+    color: white;
+}
