@@ -13,6 +13,14 @@
     box-sizing: border-box;
     font-family:'Beiruti', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+span, .material-icons
+{
+    font-size:  0.7em !important;
+    color: #C7EEFF;
+
+}
+
 a{
     text-decoration: none;
     color: var(--LinkColor);
