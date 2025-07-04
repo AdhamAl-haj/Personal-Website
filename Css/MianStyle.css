@@ -33,10 +33,9 @@ body
 .header-con
 {
     position: relative;
-    background-color: var(--TitleColor);
-    padding: 15px 0px;
-    /* border-bottom: 1px solid #1D242B; */
+    padding-bottom: 5px;
     box-shadow: 0px 7px 15px 5px rgb(29 36 43 / 10%);
+    background-color: var(--TitleColor);
 }
 
 .logo-con{
@@ -45,6 +44,8 @@ body
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+    padding-top: 15px;
+    background-color: var(--LinkColor);
 }
 
 .logo-con .logo{
