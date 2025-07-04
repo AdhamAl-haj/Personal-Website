@@ -16,7 +16,7 @@
 
 span, .material-icons
 {
-    font-size:  0.7em !important;
+    font-size:  0.5em;
     color: #C7EEFF;
 
 }
@@ -105,7 +105,7 @@ body
 .links-con .list-links .Section-Style a
 {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     padding: 10px 10px;
     font-size: 26px;
     color: var(--BackgroundColor);
@@ -118,10 +118,6 @@ body
 }
 
 .links-con .list-links .Section-Style a:hover
-{
-    color: wheat;
-}
-.links-con .list-links .Section-Style a:hover .links-con .list-links .Section-Style a > span
 {
     color: wheat;
 }
