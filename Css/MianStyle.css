@@ -44,7 +44,6 @@ body
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
-    /* padding-top: 5px; */
     background-color: var(--LinkColor);
 }
 
@@ -88,7 +87,7 @@ body
     padding: 10px 20px;
     font-size: 26px;
     color: var(--BackgroundColor);
-    font-weight: 400;
+    font-weight: 600;
 }
 .links-con .list-links .Section-Style a:hover
 {
