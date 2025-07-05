@@ -39,10 +39,51 @@ a {
 }
 
 .header-con > .container {
+    position: relative;  /* أضفنا هذا السطر */
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.header-con > .container::after
+{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: linear-gradient(
+    to right,
+    rgba(0, 119, 192, 0),    /* شفاف تماما */
+    rgba(0, 119, 192, 0.3) 30%, /* تدرج خفيف */
+    rgba(0, 119, 192, 0.6) 60%, /* أغمق */
+    rgba(0, 119, 192, 1)    90%  /* اللون الكامل */
+    );
+    pointer-events: none; /* لمنع التداخل مع العناصر التي تحت */
+    z-index: 10;
+
+}
+
+.header-con > .container::before
+{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100%;
+    left:0;
+    top: 0;
+    background: linear-gradient(
+    to left,
+    rgba(0, 119, 192, 0),    /* شفاف تماما */
+    rgba(0, 119, 192, 0.3) 30%, /* تدرج خفيف */
+    rgba(0, 119, 192, 0.6) 60%, /* أغمق */
+    rgba(0, 119, 192, 1)    90%  /* اللون الكامل */
+    );
+    pointer-events: none; /* لمنع التداخل مع العناصر التي تحت */
+    z-index: 10;
+
 }
 
 /* Logo Section */
