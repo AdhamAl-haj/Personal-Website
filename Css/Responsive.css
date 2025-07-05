@@ -18,10 +18,14 @@
     {
         margin-top: 0px;
     }
-    .info,
-    .lang
-    {
-        
+    .list-links {
+     animation: subtle-slide 10s ease-in-out infinite;
+    }
+    @keyframes subtle-slide {
+        0%   { transform: translateX(0); }
+        5%   { transform: translateX(-10px); }
+        10%  { transform: translateX(0); }
+        100% { transform: translateX(0); } /* الباقي يكون ساكن */
     }
 }
 
