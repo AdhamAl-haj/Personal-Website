@@ -1,128 +1,128 @@
-:root
-{
-    --TitleColor: #0077C0;
-    --LinkColor: #1D242B;
-    --BackgroundColor: #FAFAFA;
-    --LighttitleColor:#C7EEFF;
+:root {
+  --TitleColor: #0077C0;
+  --LinkColor: #1D242B;
+  --BackgroundColor: #FAFAFA;
+  --LighttitleColor: #C7EEFF;
 }
 
-
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing:content-box;
-    font-family:'Beiruti', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset & Base Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Beiruti', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-span, .material-icons
-{
-    font-size:  0.5em;
-    color: #C7EEFF;
-
+body {
+  background-color: var(--BackgroundColor);
 }
 
-a{
-    text-decoration: none;
-    color: var(--LinkColor);
+a {
+  text-decoration: none;
+  color: var(--LinkColor);
 }
 
-body
-{
-    background-color: var(--BackgroundColor);
-}
-.container
-{
-    margin: 0 auto;
-    padding: 0px 15px;
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-
-/* -- -- Header Style -- -- */
-.header-con
-{
-    position: relative;
-    box-shadow: 0px 7px 15px 5px rgb(29 36 43 / 10%);
-    background-color: var(--TitleColor);
-    overflow: hidden;
-}
-.lang
-{
-    position: absolute;
-    left: 30px;
-    top: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
-}
-.info > span,
-.lang > span
-{
-    color: #FAFAFA;
-    font-size: 20px;
+/* Header Structure */
+.header-con {
+  position: relative;
+  background-color: var(--TitleColor);
+  box-shadow: 0px 7px 15px 5px rgb(29 36 43 / 10%);
+  overflow: hidden;
 }
 
-.logo-con{
+.header-con > .container {
     display: flex;
-    position: relative;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    justify-content: center;
+}
+
+/* Logo Section */
+.logo-con {
+    display: flex;
+    align-items: center;
     background-color: var(--LinkColor);
-}
-
-.logo-con .logo{
-    max-width: 200px;
-    padding: 15px 0px;
-}
-
-
-.links-con
-{
-    display: flex;
-    position: relative;
     justify-content: center;
-    overflow-x: auto;
-
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
-}
-.links-con::-webkit-scrollbar {
-  display: none;  
-}
-.links-con .list-links
-{
-    list-style-type: none;
-    display: flex;
 }
 
-.links-con .list-links .Section-Style
-{
-    position: relative;
-}
-.links-con .list-links .Section-Style:not(:first-child)::after
-{
-    position: absolute;
-    content: ""; 
-    background-color:var(--LighttitleColor);
-    width: 1px;
-    height: 50%;
-    top: 50%;
-    transform: translate(0%,-50%);
+.logo-con .logo {
+  max-width: 200px;
+  padding: 15px 0;
 }
 
-.links-con .list-links .Section-Style a
+/* Language Icon */
+.lang {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.lang > span,
+.info > span {
+  color: var(--BackgroundColor);
+  font-size: 20px;
+}
+
+/* Navigation Links */
+.links-con {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-scrolbar-style: none;
+}
+
+.links-con::-webkit-scrollbar
 {
-    display: flex;
-    gap: 10px;
-    padding: 10px 10px;
-    font-size: 26px;
-    color: var(--BackgroundColor);
-    font-weight: 400;
-    transition: all .5s;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    display: none;
+}
+
+.list-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Section-Style {
+  position: relative;
+}
+
+/* Add vertical separator between items (except first) */
+.Section-Style:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  background-color: var(--LighttitleColor);
+  width: 1px;
+  height: 50%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.Section-Style a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--BackgroundColor);
+  transition: all 0.5s ease;
+}
+
+/* Icon Styling */
+span,
+.material-icons {
+  font-size: 0.5em;
+  color: var(--LighttitleColor);
 }
