@@ -181,7 +181,6 @@ span,
     flex-direction:row-reverse;
     height:  calc(100vh - 176px);
     overflow: hidden;
-    padding: 15px 50px;
 }
 .tree-con {
     width: 100%;
