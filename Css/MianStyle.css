@@ -167,3 +167,31 @@ span,
   font-size: 0.5em;
   color: var(--LighttitleColor);
 }
+
+/*- -- - - - - -- -- -*/
+.mainsection
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+    height:  calc(100vh - 176px);
+    overflow: hidden;
+    padding: 15px 50px;
+}
+.tree-con {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-image: url('../Images/Me-On-Tree.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; 
+    background-attachment: scroll;     
+    background-clip: border-box;
+    overflow: hidden;
+}
