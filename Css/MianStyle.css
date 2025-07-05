@@ -45,7 +45,7 @@ body
     background-color: var(--TitleColor);
     overflow: hidden;
 }
-.info
+.lang
 {
     position: absolute;
     left: 30px;
@@ -53,22 +53,12 @@ body
     width: 20px;
     height: 20px;
     z-index: 1;
-    font-size: 30px;
-}
-.lang
-{
-    position: absolute;
-    left: 60px;
-    top: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
-    font-size: 30px;
 }
 .info > span,
 .lang > span
 {
     color: #FAFAFA;
+    font-size: 20px;
 }
 
 .logo-con{
@@ -91,6 +81,15 @@ body
     display: flex;
     position: relative;
     justify-content: center;
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.links-con::-webkit-scrollbar {
+  display: none;  
 }
 .links-con .list-links
 {
@@ -101,7 +100,6 @@ body
 .links-con .list-links .Section-Style
 {
     position: relative;
-    overflow: hidden;
 }
 .links-con .list-links .Section-Style:not(:first-child)::after
 {
