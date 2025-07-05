@@ -182,12 +182,19 @@ span,
     height:  calc(100vh - 176px);
     overflow: hidden;
     padding-top: 20px;
+
+    background-image: url('../Images/Backgound.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    background-attachment: scroll;     
+    background-clip: border-box;
 }
 .tree-con {
     width: 100%;
     height: 100%;
     padding: 15px;
-    background-image: url('../Images/Me-On-Tree.png');
+    background-image: url('../Images/Me-On-Tree-2.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain; 
